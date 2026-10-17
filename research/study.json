@@ -1,0 +1,189 @@
+{
+  "output_dir": "../research_output",
+  "queries": [
+    {
+      "id": "EDU_V1",
+      "q": "VTuber lesson",
+      "type": "video",
+      "language": "en",
+      "regions": [
+        "US",
+        "GB"
+      ],
+      "orders": [
+        "relevance",
+        "date"
+      ]
+    },
+    {
+      "id": "EDU_V2",
+      "q": "VTuber tutorial",
+      "type": "video",
+      "language": "en",
+      "regions": [
+        "US",
+        "GB"
+      ],
+      "orders": [
+        "relevance",
+        "date"
+      ]
+    },
+    {
+      "id": "EDU_V3",
+      "q": "VTuber teaching",
+      "type": "video",
+      "language": "en",
+      "regions": [
+        "US",
+        "GB"
+      ],
+      "orders": [
+        "relevance",
+        "date"
+      ]
+    },
+    {
+      "id": "EDU_V4",
+      "q": "VTuber explanation",
+      "type": "video",
+      "language": "en",
+      "regions": [
+        "US",
+        "GB"
+      ],
+      "orders": [
+        "relevance",
+        "date"
+      ]
+    },
+    {
+      "id": "EDU_V5",
+      "q": "\"virtual YouTuber\" lesson",
+      "type": "video",
+      "language": "en",
+      "regions": [
+        "US",
+        "GB"
+      ],
+      "orders": [
+        "relevance",
+        "date"
+      ]
+    },
+    {
+      "id": "EDU_V6",
+      "q": "\"virtual YouTuber\" lecture",
+      "type": "video",
+      "language": "en",
+      "regions": [
+        "US",
+        "GB"
+      ],
+      "orders": [
+        "relevance",
+        "date"
+      ]
+    },
+    {
+      "id": "EDU_V7",
+      "q": "\"virtual teacher\" lesson",
+      "type": "video",
+      "language": "en",
+      "regions": [
+        "US",
+        "GB"
+      ],
+      "orders": [
+        "relevance",
+        "date"
+      ]
+    },
+    {
+      "id": "EDU_C1",
+      "q": "\"educational VTuber\"",
+      "type": "channel",
+      "language": "en",
+      "regions": [
+        "US"
+      ],
+      "orders": [
+        "relevance"
+      ]
+    },
+    {
+      "id": "EDU_C2",
+      "q": "\"VTuber teacher\"",
+      "type": "channel",
+      "language": "en",
+      "regions": [
+        "US"
+      ],
+      "orders": [
+        "relevance"
+      ]
+    },
+    {
+      "id": "EDU_C3",
+      "q": "\"knowledge VTuber\"",
+      "type": "channel",
+      "language": "en",
+      "regions": [
+        "US"
+      ],
+      "orders": [
+        "relevance"
+      ]
+    }
+  ],
+  "year_windows": [],
+  "max_search_pages_per_query": 2,
+  "topic_counts": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "lda_passes": 10,
+  "lda_iterations": 100,
+  "min_document_frequency": 2,
+  "max_document_fraction": 0.8,
+  "bigram_min_count": 3,
+  "topic_top_words": 10,
+  "selected_topic_count": null,
+  "selected_seed": 42,
+  "topic_names": {},
+  "topic_families": {},
+  "boilerplate_patterns": [
+    "(?i)subscribe to my channel.*",
+    "(?i)follow me on.*",
+    "(?i)sponsor(?:ed)? by.*"
+  ],
+  "term_dictionary": {
+    "vtubers": "vtuber",
+    "youtubers": "youtuber"
+  },
+  "sentiment_backend": "transformer",
+  "sentiment_model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "sentiment_revision": "3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7",
+  "inference_batch_size": 16,
+  "bootstrap_samples": 1000,
+  "permutations": 1000,
+  "seed": 42,
+  "audit_sample_per_language": 30,
+  "aspect_rules": "aspect_rules.json",
+  "eta_grid": [
+    0.01,
+    0.1
+  ],
+  "fixed_margin_permutations": 200,
+  "community_null_samples": 100,
+  "community_bootstrap_samples": 100
+}

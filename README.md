@@ -2,6 +2,17 @@
 
 Collect YouTube video metadata and top-level comments for a configurable search keyword, discover metadata topics with scikit-learn Latent Dirichlet Allocation (LDA), score comments using NLTK VADER, and generate Matplotlib charts.
 
+## Manuscript research workflow (RQ1–RQ3)
+
+For `Source/VTuber_Study1_CHB_Manuscript_v14_Theory_Integrated.pdf`, use the staged workflow described in [research/README.md](research/README.md). It adds channel/video screening, reply collection, translated metadata, gensim LDA model selection, pretrained transformer sentiment, nine aspects, topic-weighted estimates, and relational networks with channel bootstrap and permutation checks. It does not manufacture the draft's illustrative results.
+
+```bash
+python main.py research check
+# Equivalent entry point: python research_main.py check
+```
+
+The original commands below remain available for exploratory work; they do not implement the manuscript's complete research design.
+
 ## Run as a Python file (Anaconda)
 
 ```bash

@@ -1,0 +1,237 @@
+{
+  "version": "1.0.0-pilot",
+  "aspects": {
+    "A1": {
+      "name": "organization",
+      "domain": "CoI",
+      "patterns": [
+        "\\b(?:well |poorly |badly )?organi[sz](?:ed|ation)\\b",
+        "\\blesson (?:structure|plan)\\b",
+        "\\b(?:structured|unstructured) lesson\\b"
+      ],
+      "strict_patterns": [
+        "\\b(?:well|poorly|badly) organi[sz]ed\\b",
+        "\\b(?:clear|confusing) lesson structure\\b"
+      ],
+      "positive": [
+        "well organized",
+        "well organised",
+        "clear lesson structure"
+      ],
+      "negative": [
+        "poorly organized",
+        "badly organized",
+        "confusing lesson structure"
+      ]
+    },
+    "A2": {
+      "name": "explanation",
+      "domain": "CoI",
+      "patterns": [
+        "\\b(?:explain(?:s|ed|ing)?|explanations?)\\b",
+        "\\bworked (?:steps|example)\\b"
+      ],
+      "strict_patterns": [
+        "\\b(?:clear|unclear|confusing|helpful|great) explanation\\b",
+        "\\bexplain(?:ed|ing)? (?:clearly|well|badly)\\b",
+        "\\bstep by step\\b"
+      ],
+      "positive": [
+        "clear explanation",
+        "explained clearly",
+        "explained well",
+        "helpful explanation"
+      ],
+      "negative": [
+        "unclear explanation",
+        "confusing explanation",
+        "not explained",
+        "did not explain",
+        "didn't explain"
+      ]
+    },
+    "A3": {
+      "name": "facilitation",
+      "domain": "CoI",
+      "patterns": [
+        "\\banswer(?:ed|ing|s)? (?:my|our|the) question",
+        "\\brespond(?:ed|s|ing)? to (?:my|our|the) question",
+        "\\bfeedback\\b"
+      ],
+      "strict_patterns": [
+        "\\banswered my question\\b",
+        "\\b(?:helpful|useful|unhelpful) feedback\\b"
+      ],
+      "positive": [
+        "answered my question",
+        "helpful feedback",
+        "useful feedback"
+      ],
+      "negative": [
+        "ignored my question",
+        "did not answer",
+        "didn't answer",
+        "unhelpful feedback"
+      ]
+    },
+    "A4": {
+      "name": "reported_understanding",
+      "domain": "CoI",
+      "patterns": [
+        "\\b(?:understand|understood|confused)\\b",
+        "\\b(?:finally|now) (?:get|got) it\\b",
+        "\\b(?:can|cannot|can't) solve\\b"
+      ],
+      "strict_patterns": [
+        "\\b(?:i|we) (?:finally |now |still )?(?:understand|understood|don't understand|do not understand|cannot understand|can't understand)\\b",
+        "\\b(?:finally|now) (?:get|got) it\\b",
+        "\\bi(?: am|'m) (?:still )?confused\\b"
+      ],
+      "positive": [
+        "i understand",
+        "we understand",
+        "now understand",
+        "finally understand",
+        "finally get it",
+        "now get it",
+        "i can solve"
+      ],
+      "negative": [
+        "don't understand",
+        "do not understand",
+        "cannot understand",
+        "can't understand",
+        "still confused",
+        "i am confused",
+        "i'm confused",
+        "cannot solve",
+        "can't solve"
+      ]
+    },
+    "A5": {
+      "name": "peer_interaction",
+      "domain": "CoI",
+      "patterns": [
+        "\\bstudy(?:ing)? together\\b",
+        "\\b(?:study group|fellow learners|study buddies|each other)\\b",
+        "\\b(?:good luck|you can do it|we can do this)\\b"
+      ],
+      "strict_patterns": [
+        "\\bstudy(?:ing)? together\\b",
+        "\\b(?:study group|fellow learners|study buddies)\\b"
+      ],
+      "positive": [
+        "study together",
+        "good luck",
+        "you can do it",
+        "help each other"
+      ],
+      "negative": [
+        "toxic community",
+        "unhelpful community"
+      ]
+    },
+    "A6": {
+      "name": "pacing",
+      "domain": "CTML",
+      "patterns": [
+        "\\b(?:pace|pacing)\\b",
+        "\\btoo (?:fast|slow)\\b",
+        "\\bslow(?:er| down)\\b"
+      ],
+      "strict_patterns": [
+        "\\b(?:too fast|too slow|perfect pace|good pacing|slow down)\\b"
+      ],
+      "positive": [
+        "perfect pace",
+        "good pacing",
+        "easy to follow pace"
+      ],
+      "negative": [
+        "too fast",
+        "too slow",
+        "slow down",
+        "rushed"
+      ]
+    },
+    "A7": {
+      "name": "visual_presentation",
+      "domain": "CTML",
+      "patterns": [
+        "\\b(?:diagram|diagrams|slides|subtitles|visuals|whiteboard|on.screen text)\\b"
+      ],
+      "strict_patterns": [
+        "\\b(?:helpful|clear|confusing|unreadable|useful) (?:diagram|diagrams|slides|subtitles|visuals)\\b"
+      ],
+      "positive": [
+        "helpful diagram",
+        "clear slides",
+        "useful visuals",
+        "clear subtitles"
+      ],
+      "negative": [
+        "confusing diagram",
+        "unreadable slides",
+        "tiny text",
+        "blurry diagram"
+      ]
+    },
+    "A8": {
+      "name": "voice_and_delivery",
+      "domain": "CTML",
+      "patterns": [
+        "\\b(?:voice|narration|audio|microphone|speaking style)\\b"
+      ],
+      "strict_patterns": [
+        "\\b(?:clear|soothing|pleasant|quiet|loud|muffled|annoying) (?:voice|audio|narration)\\b"
+      ],
+      "positive": [
+        "clear voice",
+        "soothing voice",
+        "pleasant voice",
+        "clear audio"
+      ],
+      "negative": [
+        "muffled voice",
+        "annoying voice",
+        "cannot hear",
+        "can't hear",
+        "too quiet",
+        "too loud"
+      ]
+    },
+    "A9": {
+      "name": "persona_and_avatar",
+      "domain": "PSI",
+      "patterns": [
+        "\\b(?:avatar|persona|character design|vtuber model)\\b",
+        "\\b(?:keeps? me company|feel less alone|feel close to you|miss you|attached to you)\\b"
+      ],
+      "strict_patterns": [
+        "\\b(?:cute|beautiful|love|like|ugly) (?:this |your |the )?avatar\\b",
+        "\\b(?:keeps? me company|feel less alone|feel close to you|attached to you)\\b"
+      ],
+      "positive": [
+        "love this avatar",
+        "cute avatar",
+        "keeps me company",
+        "feel less alone"
+      ],
+      "negative": [
+        "ugly avatar",
+        "annoying persona"
+      ],
+      "subtypes": {
+        "appearance": [
+          "\\b(?:avatar|character design|vtuber model)\\b"
+        ],
+        "companionship": [
+          "\\b(?:keeps? me company|feel less alone|not alone)\\b"
+        ],
+        "attachment": [
+          "\\b(?:feel close to you|miss you|attached to you)\\b"
+        ]
+      }
+    }
+  }
+}

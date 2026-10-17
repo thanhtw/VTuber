@@ -7,7 +7,11 @@ def main():
     # Support direct execution without requiring an editable package installation.
     sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
     try:
-        from youtube_nlp.cli import main as run
+        if len(sys.argv) > 1 and sys.argv[1] == "research":
+            del sys.argv[1]
+            from youtube_nlp.research.cli import main as run
+        else:
+            from youtube_nlp.cli import main as run
     except ModuleNotFoundError as exc:
         raise SystemExit(
             f"Missing dependency: {exc.name}.\n"
